@@ -22,6 +22,7 @@ class TransactionOuput {
 	this.value = value;
 	this.parentTransactionId = parentTransactionId;
 	this.id = StringUtil.applySha256(StringUtil.getStringFromKey(reciepient)+Float.toString(value)+parentTransactionId);
+    
     }
    
     //comprueba si la moneda te pertenece
